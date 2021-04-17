@@ -1,0 +1,129 @@
+#include <SFML/Graphics.hpp>
+
+#include <iostream>
+
+
+using namespace std;
+using namespace sf;
+
+
+
+
+
+
+int main()
+{
+	
+	
+RenderWindow window(VideoMode(600, 600), "SFML ");
+
+int x=0 , y=0 ;
+Texture texture, texture2;
+	
+Vector2i source(10, 0);
+
+Sprite sprite(texture);
+texture.loadFromFile("chompersprites.png");
+
+
+	while (window.isOpen())
+	{
+		Event event;
+		while (window.pollEvent(event))
+		{
+			switch (event.type)
+			{
+			case Event::Closed:
+				window.close();
+				break;
+
+
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Right))
+			{
+				x = 1;
+				source.y = 0;
+				//texture.setRepeated(true);
+			}
+
+			//cout << x << endl;
+			if (Keyboard::isKeyPressed(Keyboard::Key::Down))
+			{
+				x = 2;
+				source.y = 1;
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Left))
+			{
+				x = 3;
+				source.y = 2;
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Up))
+			{
+				x = 4;
+				source.y = 3;
+			}
+
+		}
+		
+		
+				
+
+
+		if (x == 1)
+		{
+
+			if (sprite.getPosition().x < 568) {
+				sprite.move(.25, 0);
+				//sprite2.move(.25, 0);
+			}
+		}
+		else if (x == 2)
+		{
+			if (sprite.getPosition().y < 568) {
+				sprite.move(0, .25);
+				//sprite2.move(0, .25);
+			}
+		}
+		else if (x == 3)
+		{
+			if (sprite.getPosition().x >= 0) {
+				sprite.move(-.25, 0);
+				//sprite2.move(-.25, 0);
+			}
+		}
+		else if (x == 4)
+		{
+			if (sprite.getPosition().y >= 0) {
+				sprite.move(0, -.25);
+				//sprite2.move(0, -.25);
+			}
+		}
+		int pox = sprite.getPosition().x;
+		int poy = sprite.getPosition().y;
+		//arr[pox / 32][poy/ 32] = 1;
+		if(y==0)
+		source.x++;
+		if (source.x >= 12)
+			source.x = 10;
+		y++;
+		if (y == 100)
+			y = 0;
+		sprite.setTextureRect(IntRect(source.x * 32, source.y * 32, 32, 32));
+		//if(sprite.getPosition().x)
+
+		window.clear();
+
+		//if (y < 500)
+		//sk();
+		window.draw(sprite);
+		//else if (y<1000)
+			//window.draw(sprite2), y++;
+		//else
+			//window.draw(sprite), y = 0;
+		//window.draw(sokar);
+
+		window.display();
+	}
+
+	return 0;
+}

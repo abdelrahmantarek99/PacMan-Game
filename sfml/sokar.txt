@@ -1,0 +1,193 @@
+void sk()
+{
+	if (arr[0][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][1] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 1 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][2] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 2 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][3] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 3 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][4] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 4 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][5] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 5 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][6] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 6 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][7] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 7 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][8] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 8 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][9] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 9 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][10] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 10 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][11] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 11 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][12] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 12 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][13] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 13 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][14] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 14 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[0][15] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(0 * 32 + 11, 15 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+
+
+	if (arr[1][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(1 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[2][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(2 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[3][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(3 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[4][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(4 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[5][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(5 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[6][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(6 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[7][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(7 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[8][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(8 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[9][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(9 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[10][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(10 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[11][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(11 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[12][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(12 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[13][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(13 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[14][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(14 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+	if (arr[15][0] == 0) {
+		CircleShape sokar(5);
+		sokar.setPosition(Vector2f(15 * 32 + 11, 0 * 32 + 11));
+		sokar.setFillColor(Color::Yellow);
+		window.draw(sokar);
+	}
+
+
+}

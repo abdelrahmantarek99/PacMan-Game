@@ -1,0 +1,107 @@
+#include <SFML/Graphics.hpp>
+
+#include <iostream>
+
+
+using namespace std;
+using namespace sf;
+
+int main()
+{
+	RenderWindow window(VideoMode(600, 600), "SFML ");
+	
+	int x = 0, y = 0; bool ok = 0;
+	Texture texture,texture2,texture3;
+	texture.loadFromFile("ball.png");
+	texture2.loadFromFile("ball.png");
+	texture3.loadFromFile("oo.png");
+
+
+	Sprite sprite(texture);
+	Sprite sprite2(texture2);
+    Sprite sprite3(texture3);
+	sprite2.setColor(Color::Red);
+	sprite3.setPosition(300, 300);
+
+	while (window.isOpen())
+	{
+		Event event;
+		while (window.pollEvent(event))
+		{
+			switch (event.type)
+			{
+			case Event::Closed:
+				window.close();
+				break;
+
+
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Right))
+			{ 
+					x = 1;
+				//texture.setRepeated(true);
+			}
+
+			//cout << x << endl;
+			if (Keyboard::isKeyPressed(Keyboard::Key::Down))
+			{
+				x = 2;
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Left))
+			{
+				x = 3;
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Up))
+			{
+				x = 4;
+			}
+			
+		}
+
+			if (x == 1)
+			{	
+
+				if (sprite.getPosition().x <= 560) {
+					sprite.move(.25, 0);
+					sprite2.move(.25, 0);
+				}
+			}
+			else if (x == 2)
+			{
+				if (sprite.getPosition().y <= 560) {
+					sprite.move(0, .25);
+					sprite2.move(0, .25);
+				}
+			}
+			else if (x == 3)
+			{
+				if (sprite.getPosition().x >= 0) {
+					sprite.move(-.25, 0);
+					sprite2.move(-.25, 0);
+				}
+			}
+			else if (x==4)
+			{
+				if (sprite.getPosition().y >= 0) {
+					sprite.move(0, -.25);
+					sprite2.move(0, -.25);
+				}
+			}
+		window.clear();
+		if ((sprite.getPosition().y >=300  && sprite.getPosition().y < 338 ) &&  (sprite.getPosition().x >= 300 && sprite.getPosition().x < 342))
+			ok = 1;
+		if(!ok)
+		window.draw(sprite3);
+		
+		if (y < 500)
+			window.draw(sprite), y++;
+		else if (y<1000 )
+		window.draw(sprite2),y++;
+		else
+			window.draw(sprite), y=0;
+                  
+		window.display();
+	}
+
+	return 0;
+}

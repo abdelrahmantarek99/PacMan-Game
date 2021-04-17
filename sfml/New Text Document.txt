@@ -1,0 +1,303 @@
+#include <SFML/Graphics.hpp>
+
+#include <iostream>
+
+
+using namespace std;
+using namespace sf;
+
+RenderWindow window(VideoMode(800, 600), "SFML ");
+
+int go, y;
+Texture texture, mylevel, black;
+
+Vector2i source(10, 0);
+
+Sprite sprite(texture);
+Sprite mylevel_(mylevel);
+Sprite black_;
+bool sokar[600][600];
+
+bool valid(float x, float y)
+{
+	//0-1
+	if ((x + 32 >= 0 && x <600) && (y + 32 >= 0 && y<10))
+		return 0;
+	//0-2
+	if ((x + 32 >= 0 && x <10) && (y + 32 >= 0 && y<185))
+		return 0;
+	//0-3
+	if ((x + 32 >= 586 && x <600) && (y + 32 >= 0 && y<185))
+		return 0;
+	//0-4
+	if ((x + 32 >= 0 && x <10) && (y + 32 >= 376 && y<600))
+		return 0;
+	//0-5
+	if ((x + 32 >= 586 && x <600) && (y + 32 >= 376 && y<600))
+		return 0;
+	//0-6
+	if ((x + 32 >= 0 && x <600) && (y + 32 >= 593 && y<600))
+		return 0;
+	//1
+	if ((x + 32 >= 55 && x <115) && (y + 32 >= 51 && y<86))
+		return 0;
+	//2
+	if ((x + 32 >= 162 && x  <240) && (y + 32 >= 51 && y<86))
+		return 0;
+	//3
+	if ((x + 32 >= 350 && x  < 432) && (y  + 32>= 51 && y<86))
+		return 0;
+	//4
+	if ((x + 32 >= 478 && x  <539) && (y + 32 >= 51 && y<86))
+		return 0;
+	//5
+	if ((x + 32 >= 287 && x  <306) && (y + 32 >= 0 && y<86))
+		return 0;
+	//6
+	if ((x + 32 >= 55 && x <116) && (y +32 >= 129 && y<146))
+		return 0;
+	//7
+	if ((x + 32 >= 478 && x <539) && (y +32 >= 129 && y<146))
+		return 0;
+	//8
+	if ((x + 32 >= 224 && x  <368) && (y +32 >= 129 && y<146))
+		return 0;
+	//9
+	if ((x  + 32 >= 162 && x <179) && (y + 32 >= 129 && y<259))
+		return 0;
+	//10
+	if ((x  + 32 >= 414 && x  <432) && (y  + 32>=129 && y<259))
+		return 0;
+	//11
+	if ((x  + 32 >= 287 && x <306) && (y + 32 >= 145 && y<202))
+		return 0;
+	//12
+	if ((x + 32 >=350 && x <432) && (y + 32 >= 185 && y<202))
+		return 0;
+	//13
+	if ((x + 32 >= 162 && x  <240) && (y+ 32 >= 185 && y<202))
+		return 0;
+	//14
+	if ((x + 32 >= 224 && x <231) && (y +32 >= 248 && y<319))
+		return 0;
+	//14-1
+	if ((x + 32 >= 225 && x  <368) && (y + 32 >= 312 && y<319))
+		return 0;
+	//15
+	if ((x +  32 >= 360 && x <368) && (y +32 >= 248 && y<319))
+		return 0;
+	//15-1
+	if ((x + 32 >= 318 && x  <368) && (y + 32 >= 248 && y<252))
+		return 0;
+	//15-2
+	if ((x + 32 >= 225 && x  <275) && (y + 32 >= 248 && y<252))
+		return 0;
+	//16
+	if ((x + 32 >= 162 && x <179) && (y +32 >= 308 && y<376))
+		return 0;
+	//17
+	if ((x + 32 >= 414 && x  <432) && (y + 32 >= 308 && y<376))
+		return 0;
+	//18
+	if ((x + 32 >= 0 && x <116) && (y + 32 >= 185 && y<259))
+		return 0;
+	//19
+	if ((x + 32 >= 478 && x  <600) && (y+ 32 >= 185 && y<259))
+		return 0;
+	//20
+	if ((x + 32 >= 0 && x <116) && (y + 32 >= 308 && y<376))
+		return 0;
+	//21
+	if ((x + 32 >= 478 && x  <600) && (y + 32 >= 308 && y<376))
+		return 0;
+	//22
+	if ((x + 32 >= 225 && x  <368) && (y + 32 >= 360 && y<376))
+		return 0;
+	//23
+	if ((x + 32 >= 287 && x <306) && (y + 32 >= 360 && y<435))
+		return 0;
+	//24
+	if ((x + 32 >= 55 && x <115) && (y + 32 >= 420 && y<435))
+		return 0;
+	//24-1
+	if ((x + 32 >= 97 && x <115) && (y + 32 >= 420 && y<493))
+		return 0;
+	//25
+	if ((x + 32 >= 162 && x  <240) && (y + 32 >= 420 && y<435))
+		return 0;
+	//26
+	if ((x + 32 >= 350 && x  < 432) && (y + 32 >= 420 && y<435))
+		return 0;
+	//27
+	if ((x + 32 >= 478 && x  <539) && (y + 32 >= 420 && y<435))
+		return 0;
+	//27-1
+	if ((x + 32 >= 478 && x  <493) && (y + 32 >= 420 && y<493))
+		return 0;
+	//29
+	if ((x + 32 >= 0 && x  <50) && (y + 32 >= 478 && y<493))
+		return 0;
+	//30
+	if ((x + 32 >= 543 && x  <600) && (y + 32 >= 478 && y<493))
+		return 0;
+	//31
+	if ((x + 32 >= 224 && x  <368) && (y + 32 >= 478 && y<493))
+		return 0;
+	//31-1
+	if ((x + 32 >= 287 && x  <306) && (y + 32 >= 478 && y<553))
+		return 0;
+	//32
+	if ((x + 32 >= 162 && x <179) && (y + 32 >= 478 && y<553))
+		return 0;
+	//33
+	if ((x + 32 >= 414 && x  <432) && (y + 32 >= 478 && y<553))
+		return 0;
+	//34
+	if ((x + 32 >= 55 && x  <240) && (y + 32 >= 535 && y<553))
+		return 0;
+	//35
+	if ((x + 32 >= 350 && x  <539) && (y + 32 >= 535 && y<553))
+		return 0;
+
+
+
+
+	return 1;
+
+
+}
+
+void moving_pacman(int pos)
+{
+	float pox = sprite.getPosition().x;
+	float poy = sprite.getPosition().y;
+
+	if (pos == 1)
+	{
+
+		if (valid(pox + .25, poy)) {
+			sprite.move(.25, 0);
+		}
+	}
+	else if (pos == 2)
+	{
+		if (valid(pox , poy+.25)) {
+			sprite.move(0, .25);
+		}
+	}
+	else if (pos == 3)
+	{
+		if (valid(pox - .25, poy)) {
+			sprite.move(-.25, 0);
+		}
+	}
+	else if (pos == 4)
+	{
+		if (valid(pox , poy-.25)) {
+			sprite.move(0, -.25);
+		}
+	}
+	 pox = sprite.getPosition().x;
+	 poy = sprite.getPosition().y;
+	 //if(pox<=-32 && poy>=)
+		
+	
+}
+
+
+int ok;
+
+int main()
+{
+
+	mylevel.loadFromFile("level 1.png");
+	texture.loadFromFile("chompersprites.png");
+	//black.loadFromFile("dsd.png");
+	//black_.setTextureRect(IntRect(0, 0, 10, 10));
+	sprite.setPosition(290, 440);
+	while (window.isOpen())
+	{
+
+		Event event;
+		while (window.pollEvent(event))
+		{
+			switch (event.type)
+			{
+			case Event::Closed:
+				window.close();
+				break;
+
+
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Right))
+			{
+				go = 1;
+				source.y = 0;
+			}
+
+			//cout << x << endl;
+			if (Keyboard::isKeyPressed(Keyboard::Key::Down))
+			{
+				go = 2;
+				source.y = 1;
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Left))
+			{
+				go = 3;
+				source.y = 2;
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Up))
+			{
+				go = 4;
+				source.y = 3;
+			}
+
+		}
+		moving_pacman(go);
+
+		if (y == 0)
+			source.x++;
+		if (source.x >= 12)
+			source.x = 10;
+		y++;
+		if (y == 100)
+			y = 0;
+		sprite.setTextureRect(IntRect(source.x * 32, source.y * 32, 32, 32));
+
+		mylevel_.setTextureRect(IntRect(0, 0, 600, 600));
+
+		//if(sprite.getPosition().x<=50 && sprite.getPosition().x>=40 && sprite.getPosition().y>=13 &&sprite.getPosition().y<=40 )	
+		//ok=1;
+
+
+		window.clear();
+		window.draw(mylevel_);
+		float pox = sprite.getPosition().x;
+		float poy = sprite.getPosition().y;
+		for (int i = 10; i <= 287; i += 22)
+		{
+			if (sokar[i][10])
+			{
+				//cout << 1 << endl;
+				RectangleShape rect(Vector2f(32, 32));
+				rect.setPosition(Vector2f(i, 12));
+				rect.setFillColor(Color::Black);
+				window.draw(rect);
+			}
+
+		}
+		int m = poy, v = pox;
+		if(poy>=10 && poy<51)
+			sokar[v][10] = 1;
+		
+		window.draw(sprite);
+		//if(ok)
+		//{black_.setPosition(40,30); window.draw(black_);}
+
+		window.display();
+
+
+	}
+
+	return 0;
+}

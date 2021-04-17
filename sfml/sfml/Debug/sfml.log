@@ -1,0 +1,140 @@
+﻿  Source.cpp
+e:\fcis\vs\projects\sfml\sfml\source.cpp(494): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(496): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(506): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(508): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(518): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(520): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(530): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(532): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(545): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(547): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(557): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(559): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(569): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(571): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(581): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(583): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(596): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(598): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(608): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(610): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(620): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(622): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(632): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(634): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(655): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(657): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(667): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(669): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(679): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(681): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(691): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(693): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(706): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(708): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(718): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(720): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(730): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(732): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(742): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(744): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(757): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(759): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(769): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(771): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(781): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(783): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(793): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(795): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(817): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(819): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(829): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(831): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(841): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(843): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(853): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(855): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(868): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(870): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(880): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(882): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(892): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(894): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(904): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(906): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(919): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(921): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(931): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(933): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(943): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(945): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(955): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(957): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(977): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(979): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(989): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(991): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1001): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1003): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1013): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1015): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1028): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1030): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1040): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1042): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1052): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1054): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1064): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1066): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1079): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1081): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1091): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1093): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1103): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1105): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1115): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1117): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1140): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1141): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1146): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1147): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1152): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1153): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1158): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1159): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1169): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1170): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1175): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1176): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1181): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1182): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1187): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1188): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1197): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1198): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1203): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1204): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1209): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1210): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1215): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1216): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1380): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1845): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1870): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1963): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(1989): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2080): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2107): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2152): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2159): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2161): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2163): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2165): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2222): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2230): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2465): warning C4244: 'initializing': conversion from 'const float' to 'int', possible loss of data
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2563): warning C4018: '<': signed/unsigned mismatch
+e:\fcis\vs\projects\sfml\sfml\source.cpp(2605): warning C4018: '<': signed/unsigned mismatch
+  sfml.vcxproj -> E:\FCIS\vs\projects\sfml\Debug\sfml.exe
+  sfml.vcxproj -> E:\FCIS\vs\projects\sfml\Debug\sfml.pdb (Full PDB)

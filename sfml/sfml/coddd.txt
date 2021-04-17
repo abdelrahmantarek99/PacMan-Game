@@ -1,0 +1,566 @@
+#include <SFML/Graphics.hpp>
+#include <string>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+using namespace sf;
+
+RenderWindow window(VideoMode(1008, 604), "SFML ");
+
+int go, mouse_move, score;
+Texture texture, mylevel, black,tee,te2 , t_ghost1, t_ghost2, t_ghost3, t_ghost4;
+Font font, font2;
+
+String Player_score = "0", str_best = "Best_Score";
+int level;
+bool okay = 1, stop, stop2, stop3, stop4, del[20];
+Sprite sfruits[100];
+Texture fruits[100];
+
+Vector2i source(10, 0);
+Text text(Player_score, font, 40), text2(str_best, font2, 30);
+
+int ok;
+
+Sprite  sahm(tee),  s_ghost1(t_ghost1), s_ghost2(t_ghost2);
+Sprite  sahm2(te2);
+int enter, strt;
+Sprite sprite(texture);
+Sprite mylevel_(mylevel);
+Sprite black_(black);
+bool sokar[800][800];
+
+bool valid(float x, float y)
+{
+	//0-1
+	if ((x + 32 >= 0 && x <600) && (y + 32 >= 0 && y<10))
+		return 0;
+	//0-2
+	if ((x + 32 >= 0 && x <10) && (y + 32 >= 0 && y<185))
+		return 0;
+	//0-3
+	if ((x + 32 >= 586 && x <600) && (y + 32 >= 0 && y<185))
+		return 0;
+	//0-4
+	if ((x + 32 >= 0 && x <10) && (y + 32 >= 376 && y<600))
+		return 0;
+	//0-5
+	if ((x + 32 >= 586 && x <600) && (y + 32 >= 376 && y<600))
+		return 0;
+	//0-6
+	if ((x + 32 >= 0 && x <600) && (y + 32 >= 593 && y<600))
+		return 0;
+	//1
+	if ((x + 32 >= 55 && x <115) && (y + 32 >= 51 && y<86))
+		return 0;
+	//2
+	if ((x + 32 >= 162 && x  <240) && (y + 32 >= 51 && y<86))
+		return 0;
+	//3
+	if ((x + 32 >= 350 && x  < 432) && (y  + 32>= 51 && y<86))
+		return 0;
+	//4
+	if ((x + 32 >= 478 && x  <539) && (y + 32 >= 51 && y<86))
+		return 0;
+	//5
+	if ((x + 32 >= 287 && x  <306) && (y + 32 >= 0 && y<86))
+		return 0;
+	//6
+	if ((x + 32 >= 55 && x <116) && (y +32 >= 129 && y<146))
+		return 0;
+	//7
+	if ((x + 32 >= 478 && x <539) && (y +32 >= 129 && y<146))
+		return 0;
+	//8
+	if ((x + 32 >= 224 && x  <368) && (y +32 >= 129 && y<146))
+		return 0;
+	//9
+	if ((x  + 32 >= 162 && x <179) && (y + 32 >= 129 && y<259))
+		return 0;
+	//10
+	if ((x  + 32 >= 414 && x  <432) && (y  + 32>=129 && y<259))
+		return 0;
+	//11
+	if ((x  + 32 >= 287 && x <306) && (y + 32 >= 145 && y<202))
+		return 0;
+	//12
+	if ((x + 32 >=350 && x <432) && (y + 32 >= 185 && y<202))
+		return 0;
+	//13
+	if ((x + 32 >= 162 && x  <240) && (y+ 32 >= 185 && y<202))
+		return 0;
+	//14
+	if ((x + 32 >= 224 && x <231) && (y +32 >= 248 && y<319))
+		return 0;
+	//14-1
+	if ((x + 32 >= 225 && x  <368) && (y + 32 >= 312 && y<319))
+		return 0;
+	//15
+	if ((x +  32 >= 360 && x <368) && (y +32 >= 248 && y<319))
+		return 0;
+	//15-1
+	if ((x + 32 >= 318 && x  <368) && (y + 32 >= 248 && y<252))
+		return 0;
+	//15-2
+	if ((x + 32 >= 225 && x  <275) && (y + 32 >= 248 && y<252))
+		return 0;
+	//16
+	if ((x + 32 >= 162 && x <179) && (y +32 >= 308 && y<376))
+		return 0;
+	//17
+	if ((x + 32 >= 414 && x  <432) && (y + 32 >= 308 && y<376))
+		return 0;
+	//18
+	if ((x + 32 >= 0 && x <116) && (y + 32 >= 185 && y<259))
+		return 0;
+	//19
+	if ((x + 32 >= 478 && x  <600) && (y+ 32 >= 185 && y<259))
+		return 0;
+	//20
+	if ((x + 32 >= 0 && x <116) && (y + 32 >= 308 && y<376))
+		return 0;
+	//21
+	if ((x + 32 >= 478 && x  <600) && (y + 32 >= 308 && y<376))
+		return 0;
+	//22
+	if ((x + 32 >= 225 && x  <368) && (y + 32 >= 360 && y<376))
+		return 0;
+	//23
+	if ((x + 32 >= 287 && x <306) && (y + 32 >= 360 && y<435))
+		return 0;
+	//24
+	if ((x + 32 >= 55 && x <115) && (y + 32 >= 420 && y<435))
+		return 0;
+	//24-1
+	if ((x + 32 >= 97 && x <115) && (y + 32 >= 420 && y<493))
+		return 0;
+	//25
+	if ((x + 32 >= 162 && x  <240) && (y + 32 >= 420 && y<435))
+		return 0;
+	//26
+	if ((x + 32 >= 350 && x  < 432) && (y + 32 >= 420 && y<435))
+		return 0;
+	//27
+	if ((x + 32 >= 478 && x  <539) && (y + 32 >= 420 && y<435))
+		return 0;
+	//27-1
+	if ((x + 32 >= 478 && x  <493) && (y + 32 >= 420 && y<493))
+		return 0;
+	//29
+	if ((x + 32 >= 0 && x  <50) && (y + 32 >= 478 && y<493))
+		return 0;
+	//30
+	if ((x + 32 >= 543 && x  <600) && (y + 32 >= 478 && y<493))
+		return 0;
+	//31
+	if ((x + 32 >= 224 && x  <368) && (y + 32 >= 478 && y<493))
+		return 0;
+	//31-1
+	if ((x + 32 >= 287 && x  <306) && (y + 32 >= 478 && y<553))
+		return 0;
+	//32
+	if ((x + 32 >= 162 && x <179) && (y + 32 >= 478 && y<553))
+		return 0;
+	//33
+	if ((x + 32 >= 414 && x  <432) && (y + 32 >= 478 && y<553))
+		return 0;
+	//34
+	if ((x + 32 >= 55 && x  <240) && (y + 32 >= 535 && y<553))
+		return 0;
+	//35
+	if ((x + 32 >= 350 && x  <539) && (y + 32 >= 535 && y<553))
+		return 0;
+
+
+
+
+	return 1;
+
+
+}
+
+void moving_pacman(int pos)
+{
+	float pox = sprite.getPosition().x;
+	float poy = sprite.getPosition().y;
+	float mo = .005*score;
+
+	if (pos == 1)
+	{
+
+		if (valid(pox + .25+mo, poy)) {
+			sprite.move(.25+mo, 0);
+		}
+	}
+	else if (pos == 2)
+	{
+		if (valid(pox , poy+.25+mo)) {
+			sprite.move(0, .25+mo);
+		}
+	}
+	else if (pos == 3)
+	{
+		if (valid(pox - .25-mo, poy)) {
+			sprite.move(-.25-mo, 0);
+		}
+	}
+	else if (pos == 4)
+	{
+		if (valid(pox , poy-.25-mo)) {
+			sprite.move(0, -.25-mo);
+		}
+	}
+	 pox = sprite.getPosition().x;
+	 poy = sprite.getPosition().y;
+	 //if(pox<=-32 && poy>=)
+		
+	
+}
+
+void st(int pos)
+{
+	if (pos == 5)
+	{
+			sahm.setPosition(380, 335);	
+	}
+	else if (pos == 6)
+	{
+			sahm.setPosition(400, 385);	
+	}
+	else if (pos == 7)
+	{
+		sahm.setPosition(420, 445);
+	}
+
+}
+
+void moving_ghost()
+{
+	float pox = s_ghost1.getPosition().x;
+	float poy = s_ghost1.getPosition().y;
+	float pox2 = s_ghost2.getPosition().x;
+	float poy2 = s_ghost2.getPosition().y;
+	///to eat pacman
+
+	if (abs(sprite.getPosition().x - pox) <= 20 && abs(sprite.getPosition().y - poy) <= 20)
+		stop = 1;
+	if (abs(sprite.getPosition().x - pox2) <= 20 && abs(sprite.getPosition().y - poy2) <= 20)
+		stop2 = 1;
+
+	///
+	///to move automatically
+	if (pox + .3 >= 560 || pox2 + .3 >= 560)
+		okay = 1;
+	else if (pox - .3 <= 10 || pox2 - .3 <= 10)
+		okay = 0;
+
+	if (!okay)
+		s_ghost1.move(.3, 0), s_ghost2.move(.3, 0);
+	else
+		s_ghost1.move(-.3, 0), s_ghost2.move(-.3, 0);
+
+}
+
+
+
+/*void score()
+{
+	float pox = sprite.getPosition().x;
+	float poy = sprite.getPosition().y;
+	int y = poy, x = pox;
+	int  v = pox,m = poy;
+
+	if (sokar[v][m] == 0)
+	{
+		sum_score++;
+		sokar[v][m] = 1;
+	}
+	//0-5
+	for (int j = 0; j < 600; j++)
+	for (int i = 0; i <600; i++)
+	{
+		if (sokar[j][i])
+		{
+			RectangleShape rect(Vector2f(22, 22));
+			rect.setPosition(Vector2f(j+2, i+2));
+			rect.setFillColor(Color::Black);
+			window.draw(rect);
+		}
+
+	}
+	
+
+
+}*/
+
+void scoor()
+{
+	int scor = score;
+	Player_score.clear();
+	while (scor > 0)
+	{
+		int x = scor % 10;
+		Player_score += (char)(x + '0');
+		scor /= 10;
+	}
+	reverse(Player_score.begin(), Player_score.end());
+
+}
+
+void forloop(int start, int one, int two, int three, int four, int plus)
+{
+	for (int i = start; i<start + plus; i++)
+	{
+		fruits[i].loadFromFile("ddddd.png");
+		sfruits[i].setTexture(fruits[i]);
+		sfruits[i].setTextureRect(IntRect(one, two, three, four));
+		if (plus<4)
+			sfruits[i].setScale(2, 2);
+		else
+			sfruits[i].setScale(1.6, 1.5);
+
+
+
+	}
+
+
+}
+
+void set_fruits()
+{ ///apples	
+	sfruits[0].setPosition(22, 150);
+	sfruits[1].setPosition(550, 560);
+	sfruits[2].setPosition(315, 420);
+	sfruits[3].setPosition(380, 150);
+
+	forloop(0, 2, 35, 15, 16, 4);
+	////
+
+	///banana
+	sfruits[4].setPosition(20, 55);
+	sfruits[5].setPosition(125, 480);
+	sfruits[6].setPosition(440, 420);
+	sfruits[7].setPosition(380, 210);
+	forloop(4, 18, 35, 15, 16, 4);
+	////
+
+	///donate
+	sfruits[8].setPosition(446, 558);
+	sfruits[9].setPosition(340, 20);
+	sfruits[10].setPosition(480, 265);
+	sfruits[11].setPosition(500, 100);
+
+	forloop(8, 35, 35, 15, 16, 4);
+	////
+
+	///burger
+	sfruits[12].setPosition(20, 558);
+	sfruits[13].setPosition(250, 180);
+	sfruits[14].setPosition(185, 350);
+	sfruits[15].setPosition(550, 55);
+	forloop(12, 53, 35, 15, 16, 4);
+	////
+
+	//gift 
+	forloop(16, 257, 35, 15, 16, 1);
+	sfruits[16].setPosition(250, 55);
+
+
+
+
+
+}
+
+void draw_fn()
+{
+	float tox = sprite.getPosition().x;
+	float toy = sprite.getPosition().y;
+	window.draw(mylevel_);
+	if (!stop && !stop2)
+		window.draw(sprite);
+
+	window.draw(s_ghost1);
+	window.draw(s_ghost2);
+	if (tox + 32 >= 23 && tox <= 23 + 24 && toy + 32 >= 152 && toy <= 152 + 24 && !del[0])
+		del[0] = 1, score += 10;
+
+	if (del[0] == 0)
+		window.draw(sfruits[0]);
+	window.draw(sfruits[1]);
+	window.draw(sfruits[2]);
+	window.draw(sfruits[3]);
+	window.draw(sfruits[4]);
+	window.draw(sfruits[5]);
+	window.draw(sfruits[6]);
+	window.draw(sfruits[7]);
+	window.draw(sfruits[8]);
+	window.draw(sfruits[9]);
+	window.draw(sfruits[10]);
+	window.draw(sfruits[11]);
+	window.draw(sfruits[12]);
+	window.draw(sfruits[13]);
+	window.draw(sfruits[14]);
+	window.draw(sfruits[15]);
+	window.draw(sfruits[16]);
+
+	window.draw(text);
+	window.draw(text2);
+}
+
+
+int main()
+{
+	string str2 = Player_score; int intt, neww = 0;
+	ifstream project2("projject.txt");
+
+	while (project2 >> str2 >> intt)
+	{
+		neww = intt;
+	}
+	if (score>neww)
+	{
+		ofstream project("projject.txt");
+		project << str2 << " " << score;
+
+		project.close();
+
+	}
+
+	go = 5;
+	mylevel.loadFromFile("level 1.png");
+	texture.loadFromFile("chompersprites.png");
+	tee.loadFromFile("chompersprites.png");
+	te2.loadFromFile("interface.png");
+	sahm.setPosition(380, 335);
+	set_fruits();
+
+	t_ghost1.loadFromFile("chompersprites.png");
+	s_ghost1.setTextureRect(IntRect(0, 95, 30, 32));
+	s_ghost1.setPosition(300, 555);
+
+	t_ghost2.loadFromFile("chompersprites.png");
+	s_ghost2.setTextureRect(IntRect(65, 31, 30, 32));
+	s_ghost2.setPosition(300, 90);
+	///
+	font.loadFromFile("arial.ttf");
+	font2.loadFromFile("arial.ttf");
+
+	text.setFillColor(Color::Blue);
+	text.setStyle(Text::Bold);
+	text.setPosition(650, 10);
+	text2.setFillColor(Color::Red);
+	text2.setStyle(Text::Bold);
+	text2.setPosition(610, 200);
+	
+	sprite.setPosition(290, 440);
+
+	while (window.isOpen())
+	{
+
+		Event event;
+		while (window.pollEvent(event))
+		{
+			switch (event.type)
+			{
+			case Event::Closed:
+				window.close();
+				break;
+
+
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Right))
+			{
+				go = 1;
+				source.y = 0;
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Down))
+			{
+				go = 2;
+				source.y = 1;
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Left))
+			{
+				go = 3;
+				source.y = 2;
+			}
+			if (Keyboard::isKeyPressed(Keyboard::Key::Up))
+			{
+				go = 4;
+				source.y = 3;
+			}
+			if (!level) {
+				if (Keyboard::isKeyPressed(Keyboard::Key::Num1))
+				{
+					go = 5;
+				}
+				if (Keyboard::isKeyPressed(Keyboard::Key::Num2))
+				{
+					go = 6;
+				}
+				if (Keyboard::isKeyPressed(Keyboard::Key::Num3))
+				{
+					go = 7;
+				}
+				if (Keyboard::isKeyPressed(Keyboard::Key::Space))
+				{
+					if (go == 5)
+						level = 1;
+					else if (go == 7)
+					{
+						return 0;
+					}
+					go = 0;
+				}
+			}
+
+		}
+
+		sahm2.setTextureRect(IntRect(0, 0, 1007, 604));
+		window.clear();
+		if (level == 1) {
+		moving_pacman(go);
+		moving_ghost();
+
+		if (sprite.getPosition().x >= 590)
+			sprite.setPosition(10, sprite.getPosition().y);
+
+		else if (sprite.getPosition().x <= 0)
+			sprite.setPosition(590, sprite.getPosition().y);
+
+
+		if (mouse_move == 0)
+			source.x++;
+		if (source.x >= 12)
+			source.x = 10;
+		mouse_move++;
+		if (mouse_move == 100 )
+			mouse_move = 0;
+		sprite.setTextureRect(IntRect(source.x * 32, source.y * 32, 32, 32));
+
+		mylevel_.setTextureRect(IntRect(0, 0, 600, 600));
+		scoor();
+		text.setString(Player_score);
+		text2.setString(str_best);
+		draw_fn();
+		}
+		else
+		{
+			int	py = sahm.getPosition().y;
+
+			st(go);
+
+			sahm.setTextureRect(IntRect(source.x * 32, source.y * 32, 32, 32));
+
+			window.draw(sahm2);
+
+			window.draw(sahm);
+		}
+		window.display();
+
+
+
+	}
+
+	return 0;
+}
